@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="css/style_tabela.css">
+    <script src="js/dark_tabela.js"></script>
+</head>
+
+<body>
+
+    <header id="cabecalhoLogo">
+
+        <div id="MenuLateral">
+            <img id="iconePessoaEscuro" src="img/icone.png" alt="" width="120">
+            <img id="iconePessoaBranco" src="img/icone_branco.png" alt="" width="120">
+            <h2>"DOCENTE"</h2>
+
+            <div id="DivImagem">
+                <img id="LogoSenaiHeader" src="img/senai-logo-4-599x154.png" alt="" />
+            </div>
+        </div>
+
+    </header>
+
+    <div class="titulo">
+        <button id="darkModeToggle" onclick="toggleDarkMode()"><img id="sol" src="img/crescent-moon-png-21.png"
+                alt=""></button>
+        <button id="claraModeToggle" onclick="toggleDarkMode()"><img id="sol" src="img/iconeSol.png" alt=""></button>
+        <span>
+            <h1 id="testeTitle">Competencias SocioEmocionais</h1>
+            <select id="testeSelect" onchange="mudarTitulo()">
+                <option value="trabalho em Equipe">Trabalho em Equipe</option>
+                <option value="Demonstrar Raciocinio Logico">Demonstrar Raciocinio Logico</option>
+                <option value="Demonstrar Capacidade de Organização">Demonstrar Capacidade de Organização</option>
+            </select>
+        </span>
+    </div>
+
+
+    <!-- Tabela 1 -->
+
+    <div class="tabela-container" id="tabelaTeste1Container">
+        <table id="tabelaTeste1" class="tabela">
+            <tr>
+                <th>Alunos</th>
+                <th>Atingiu</th>
+            </tr>
+            <tr>
+                <td>Adan Cardoso</td>
+                <td id="selecao">
+                  <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox1"><span class="checkmark"></span><p id="text1">Sim</p>
+                </label>
+                <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox1"><span class="checkmark"></span><p id="text2">Não</p>
+                </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 2</td>
+                <td id="selecao">
+                    <label class="container">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox2"><p id="text1">Sim</p>
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container2">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox2"><p id="text2">Não</p>
+                        <span class="checkmark"></span>
+                      </label>
+        
+            </tr>
+            <tr>
+                <td>Aluno 5</td>
+                <td id="selecao">
+                    <label class="container">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox3"><p id="text1">Sim</p>
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container2">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox3"><p id="text2">Não</p>
+                        <span class="checkmark"></span>
+                      </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 4</td>
+                <td id="selecao">
+                    <label class="container">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox4"><p id="text1">Sim</p>
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container2">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox4"><p id="text2">Não</p>
+                        <span class="checkmark"></span>
+                      </label>
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 5</td>
+                <td id="selecao">
+                    <label class="container">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox5"><p id="text1">Sim</p>
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container2">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox5"><p id="text2">Não</p>
+                        <span class="checkmark"></span>
+                      </label>
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 6</td>
+                <td id="selecao">
+                    <label class="container">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox6"><p id="text1">Sim</p>
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container2">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox6"><p id="text2">Não</p>
+                        <span class="checkmark"></span>
+                      </label>
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 7</td>
+                <td id="selecao">
+                    <label class="container">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox7"><p id="text1">Sim</p>
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container2">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox7"><p id="text2">Não</p>
+                        <span class="checkmark"></span>
+                      </label>
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 8</td>
+                <td id="selecao">
+                    <label class="container">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox8"><p id="text1">Sim</p>
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container2">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox8"><p id="text2">Não</p>
+                        <span class="checkmark"></span>
+                      </label>
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 9</td>
+                <td id="selecao">
+                    <label class="container">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox9"><p id="text1">Sim</p>
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container2">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox9"><p id="text2">Não</p>
+                        <span class="checkmark"></span>
+                      </label>
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 10</td>
+                <td id="selecao">
+                    <label class="container">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox10"><p id="text1">Sim</p>
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container2">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox10"><p id="text2">Não</p>
+                        <span class="checkmark"></span>
+                      </label>
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 11</td>
+                <td id="selecao">
+                    <label class="container">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox11"><p id="text1">Sim</p>
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container2">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox11"><p id="text2">Não</p>
+                        <span class="checkmark"></span>
+                      </label>
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 12</td>
+                <td id="selecao">
+                    <label class="container">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox12"><p id="text1">Sim</p>
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container2">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox12"><p id="text2">Não</p>
+                        <span class="checkmark"></span>
+                      </label>
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 13</td>
+                <td id="selecao">
+                    <label class="container">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox13"><p id="text1">Sim</p>
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container2">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox13"><p id="text2">Não</p>
+                        <span class="checkmark"></span>
+                      </label>
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 14</td>
+                <td id="selecao">
+                    <label class="container">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox14"><p id="text1">Sim</p>
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container2">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox14"><p id="text2">Não</p>
+                        <span class="checkmark"></span>
+                      </label>
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 15</td>
+                <td id="selecao">
+                    <label class="container">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox15"><p id="text1">Sim</p>
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container2">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox15"><p id="text2">Não</p>
+                        <span class="checkmark"></span>
+                      </label>
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 16</td>
+                <td id="selecao">
+                    <label class="container">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox16"><p id="text1">Sim</p>
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container2">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox16"><p id="text2">Não</p>
+                        <span class="checkmark"></span>
+                      </label>
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 17</td>
+                <td id="selecao">
+                    <label class="container">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox178"><p id="text1">Sim</p>
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container2">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox178"><p id="text2">Não</p>
+                        <span class="checkmark"></span>
+                      </label>
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 18</td>
+                <td id="selecao">
+                    <label class="container">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox18"><p id="text1">Sim</p>
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container2">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox18"><p id="text2">Não</p>
+                        <span class="checkmark"></span>
+                      </label>
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 19</td>
+                <td id="selecao">
+                    <label class="container">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox19"><p id="text1">Sim</p>
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container2">
+                        <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox19"><p id="text2">Não</p>
+                        <span class="checkmark"></span>
+                      </label>
+                </td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <!-- Tabela 2 -->
+
+    <div class="tabela-container" id="tabelaTeste2Container">
+        <table id="tabelaTeste2" class="tabela">
+          <tr>
+            <th>Alunos</th>
+            <th>Atingiu</th>
+        </tr>
+        <tr>
+            <td>Adan Cardoso</td>
+            <td id="selecao">
+              <label class="container">
+                <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox1"><span class="checkmark"></span><p id="text1">Sim</p>
+            </label>
+            <label class="container2">
+                <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox1"><span class="checkmark"></span><p id="text2">Não</p>
+            </label>
+            </td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox2"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox2"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+    
+        </tr>
+        <tr>
+            <td>Aluno 5</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox3"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox3"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 4</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox4"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox4"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 5</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox5"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox5"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 6</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox6"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox6"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 7</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox7"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox7"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 8</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox8"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox8"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 9</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox9"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox9"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 10</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox10"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox10"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 11</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox11"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox11"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 12</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox12"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox12"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 13</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox13"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox13"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 14</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox14"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox14"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 15</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox15"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox15"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 16</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox16"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox16"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 17</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox178"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox178"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 18</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox18"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox18"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 19</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox19"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox19"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        </table>
+    </div>
+
+
+    <!-- Tabela 3 -->
+
+
+    <div class="tabela-container" id="tabelaTeste3Container">
+        <table id="tabelaTeste3" class="tabela">
+          <tr>
+            <th>Alunos</th>
+            <th>Atingiu</th>
+        </tr>
+        <tr>
+            <td>Adan Cardoso</td>
+            <td id="selecao">
+              <label class="container">
+                <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox1"><span class="checkmark"></span><p id="text1">Sim</p>
+            </label>
+            <label class="container2">
+                <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox1"><span class="checkmark"></span><p id="text2">Não</p>
+            </label>
+            </td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox2"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox2"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+    
+        </tr>
+        <tr>
+            <td>Pablo</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox3"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox3"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 4</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox4"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox4"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 5</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox5"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox5"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 6</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox6"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox6"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 7</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox7"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox7"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 8</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox8"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox8"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 9</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox9"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox9"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 10</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox10"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox10"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 11</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox11"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox11"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 12</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox12"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox12"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 13</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox13"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox13"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 14</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox14"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox14"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 15</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox15"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox15"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 16</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox16"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox16"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 17</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox178"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox178"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 18</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox18"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox18"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Aluno 19</td>
+            <td id="selecao">
+                <label class="container">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox19"><p id="text1">Sim</p>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container2">
+                    <input type="checkbox" onclick="desmarqueOutro(this)" name="checkbox19"><p id="text2">Não</p>
+                    <span class="checkmark"></span>
+                  </label>
+            </td>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

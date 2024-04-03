@@ -1,0 +1,117 @@
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: url("../img/fundo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#caixaLogin {
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.info {
+    border-radius: 15px;
+    width: 20%;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 142px;
+}
+
+
+input {
+    border-radius: 25px;
+    border-color: #ffff;
+    border-top: #ffff solid;
+    border-left: #ffff solid;
+    margin-top: 23px;
+    height: 40px;
+    padding: 10px;
+    width: 90%;
+    background-color: transparent;
+}
+
+#forg{
+    margin-top: 7px;
+    font-size: 12px;
+}
+
+#forgButton{
+    margin-top: 7px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+::placeholder {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+#error{
+    color: #ffff;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+
+form {
+    background-color: transparent;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+}
+
+
+form [ type="submit"] {
+ 
+    height: 30px;
+    width: 50%;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+#enviar {
+
+    cursor: pointer;
+    width: 52%;
+    font-size: 14px;
+    background-color: black;
+    color: #ffff;
+    border: rebeccapurple;
+}
+
+
+
+
+.text {
+    margin-top: 40px;
+    text-shadow: 2px 2px 30px 5px black;
+    text-align: center;
+    font-size: 27px;
+    color: white;
+}

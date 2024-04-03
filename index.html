@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="caixaLogin">
+    <section class="info">
+      <form id="formcores">
+        <img src="img/logo (2).png" alt="" width="55%" height="200px">
+        <div id="error"></div>
+        <input type="text" placeholder="Usuario:" id="email" />
+        <input type="password" placeholder="Senha:" id="senha" />
+        <button id="forgButton"><h6 id="forg">Esqueceu Senha ?</h6></button>
+        <div id="icon" onclick="showHide()"></div>
+        <input id="enviar" type="submit" value="LOGIN"/>
+      </form>
+    </section>
+  </div>
+
+      <script src="./js/validacao_login.js"></script>
+
+</body>
+</html>
